@@ -43,7 +43,7 @@ try:
     import zlib
 
     def decompress(data):
-        return zlib.decompress(data)
+        return zlib.decompressobj().decompress(data)
 
     def compress(data):
         return zlib.compress(data)
